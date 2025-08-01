@@ -65,7 +65,7 @@ bash scripts/run_gromacs_48.sh
 
 | Snapshot | Analysis |
 |----------|----------|
-| ![](figures/cluster361_frame.png) | ![](results/cluster361_rmsd.svg) |
+| ![](figures/cluster361_frame.gif) | ![](results/cluster361_rmsd.svg) |
 
 ---
 
