@@ -59,7 +59,7 @@ bash scripts/run_gromacs_48.sh
 
 | Snapshot | Analysis |
 |----------|----------|
-| ![](figures/cluster200_frame.png) | ![](results/cluster200_rmsd.svg) |
+| ![](figures/cluster200_frame.gif) | ![](results/cluster200_rmsd.svg) |
 
 ### 📊 Cluster 361 (Centroid Docking)
 
