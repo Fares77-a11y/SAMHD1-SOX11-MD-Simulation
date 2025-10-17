@@ -18,6 +18,21 @@ This repository hosts a complete MD simulation workflow and post-analysis of the
 ```
 SAMHD1-SOX11-MD-Simulation/
 ├── data/                       # Raw GROMACS inputs (topol.top, mdp, gro, ndx)
+├── random/
+│   ├── topol.top
+│   ├── step3_input.gro
+│   ├── step4.0_minimization.{gro,mdp,tpr}
+│   ├── step4.1_equilibration.{gro,mdp,tpr}
+│   ├── step4.2_equilibration.{gro,mdp,tpr}
+│   └── step5_production.{gro,mdp,tpr}
+│
+└── centroid/
+    ├── topol.top
+    ├── step3_input.gro
+    ├── step4.0_minimization.{gro,mdp,tpr}
+    ├── step4.1_equilibration.{gro,mdp,tpr}
+    ├── step4.2_equilibration.{gro,mdp,tpr}
+    └── step5_production.{gro,mdp,tpr}
 ├── results/                    # Post-simulation plots and tables
 ├── figures/                    # VMD-rendered molecular frames
 ├── scripts/                    # TCL, bash, and Python analysis scripts
