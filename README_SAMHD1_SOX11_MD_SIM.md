@@ -89,13 +89,13 @@ bash scripts/run_gromacs_48.sh
 
 | Snapshot | Analysis |
 |----------|----------|
-| ![](Results/VMD-rendered molecular frames/cluster200_frame.png) | ![](results/cluster200_rmsd.svg) |
+| ![](Results/VMD-rendered molecular frames/cluster200_frame.png) | ![](Results/cluster200_rmsd.svg) |
 
 ### 📊 Cluster 361 (Centroid Docking)
 
 | Snapshot | Analysis |
 |----------|----------|
-| ![](Results/VMD-rendered molecular frames/cluster361_frame.gif) | ![](results/cluster361_rmsd.svg) |
+| ![](Results/VMD-rendered molecular frames/cluster361_frame.gif) | ![](Results/cluster361_rmsd.svg) |
 
 ### 🧬 SAMHD1 Chains-Level Dynamics
 
@@ -120,10 +120,10 @@ bash scripts/run_gromacs_48.sh
 #### 📊 Residue-Level SAMHD1 Analysis (Random VS Centroid Docking)
 | Metric | Plot |
 |--------|------|
-| RMSF A | ![](results/SAMHD1A%20RMSF.jpg) |
-| RMSF B | ![](results/SAMHD1B%20RMSF.jpg) |
-| RMSF C | ![](results/SAMHD1C%20RMSF.jpg) |
-| RMSF D | ![](results/SAMHD1D%20RMSF.jpg) |
+| RMSF A | ![](Results/figures/SAMHD1A%20RMSF.jpg) |
+| RMSF B | ![](Results/figures/SAMHD1B%20RMSF.jpg) |
+| RMSF C | ![](Results/figures/SAMHD1C%20RMSF.jpg) |
+| RMSF D | ![](Results/figures/SAMHD1D%20RMSF.jpg) |
 
 - **RMSF**: Per-residue flexibility comparison for centroid vs random placements.
 
@@ -131,10 +131,10 @@ bash scripts/run_gromacs_48.sh
 
 | Metric | Plot |
 |--------|------|
-| RMSD | ![](results/SOX11%20RMSD.jpg) |
-| ROG | ![](results/SOX11%20ROG.jpg) |
-| SASA | ![](results/SOX11%20SASA.jpg) |
-| RMSF | ![](results/SOX11%20RMSF.jpg) |
+| RMSD | ![](Results/figures/SOX11%20RMSD.jpg) |
+| ROG | ![](Results/figures/SOX11%20ROG.jpg) |
+| SASA | ![](Results/figures/SOX11%20SASA.jpg) |
+| RMSF | ![](Results/figures/SOX11%20RMSF.jpg) |
 
 
 ---
