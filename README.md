@@ -106,7 +106,7 @@ bash scripts/run_gromacs_48.sh
 
 | RMSD | ROG | SASA |
 |------|-----|------|
-| ![](Results/figures/SAMHD1%20CHAINS%20RMSD.jpg) | ![](Results/figures/SAMHD1CHAINS%20ROG.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20SASA.jpg) |
+| ![](Results/figures/SAMHD1%20CHAINS%20RMSD.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20ROG.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20SASA.jpg) |
 
 **RMSD:** Per-chain deviation comparison across centroid vs random protocols.  
 **ROG:** Structural compactness and changes over time.  
