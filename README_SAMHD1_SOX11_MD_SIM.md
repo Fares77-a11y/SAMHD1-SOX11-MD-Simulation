@@ -34,7 +34,22 @@ SAMHD1-SOX11-MD-Simulation/
     ├── step4.2_equilibration.{gro,mdp,tpr}
     └── step5_production.{gro,mdp,tpr}
 ├── results/                    # Post-simulation plots and tables
-├── figures/                    # VMD-rendered molecular frames
+│   ├── SAMHD1 CHAINS RMSD.jpg
+│   ├── SAMHD1 CHAINS ROG .jpg
+│   ├── SAMHD1 CHAINS SASA.jpg
+│   ├── SAMHD1 COMBINED RMSD.jpg
+│   ├── SAMHD1 COMBINED ROG.jpg
+│   ├── SAMHD1 COMBINED SASA.jpg
+│   ├── SOX11 RMSD.jpg
+│   ├── SOX11 ROG.jpg
+│   ├── SOX11 RMSF.jpg
+│   ├── SAMHD1A RMSF.jpg
+│   ├── SAMHD1B RMSF.jpg
+│   ├── SAMHD1C RMSF.jpg
+│   ├── SAMHD1D RMSF.jpg
+│   └── VMD-rendered molecular frames/
+│       ├── cluster200_frame.png
+│       └── cluster361_frame.gif
 ├── scripts/                    # TCL, bash, and Python analysis scripts
 │   ├── run_gromacs_48.sh
 │   ├── analyze_samhd1_sox11_vmd_revised_hbonds_v3.tcl
@@ -74,13 +89,53 @@ bash scripts/run_gromacs_48.sh
 
 | Snapshot | Analysis |
 |----------|----------|
-| ![](figures/cluster200_frame.png) | ![](results/cluster200_rmsd.svg) |
+| ![](Results/VMD-rendered molecular frames/cluster200_frame.png) | ![](results/cluster200_rmsd.svg) |
 
 ### 📊 Cluster 361 (Centroid Docking)
 
 | Snapshot | Analysis |
 |----------|----------|
-| ![](figures/cluster361_frame.gif) | ![](results/cluster361_rmsd.svg) |
+| ![](Results/VMD-rendered molecular frames/cluster361_frame.gif) | ![](results/cluster361_rmsd.svg) |
+
+### 🧬 SAMHD1 Chains-Level Dynamics
+
+| RMSD | ROG | SASA |
+|------|-----|------|
+| ![](Results/figures/SAMHD1_CHAINS_RMSD.jpg) | ![](Results/figures/SAMHD1_CHAINS_ROG.jpg) | ![](Results/figures/SAMHD1_CHAINS_SASA.jpg) |
+
+- **RMSD**: Per-chain deviation comparison across centroid vs random protocols.
+- **Radius of Gyration (ROG)**: Assesses structural compactness and changes over time.
+- **SASA**: Solvent-accessible surface area for individual SAMHD1 chains.
+
+### 🧩 SAMHD1 Complex-Level Dynamics (Centroid vs Random)
+
+| RMSD | ROG | SASA |
+|------|-----|------|
+| ![](Results/figures/SAMHD1_COMBINED_RMSD.jpg) | ![](Results/figures/SAMHD1_COMBINED_ROG.jpg) | ![](Results/figures/SAMHD1_COMBINED_SASA.jpg) |
+
+- **Combined RMSD**: Overall deviation of the full complex.
+- **Combined ROG**: Global compactness across docking strategies.
+- **Combined SASA**: Surface exposure changes for the complex as a whole.
+
+#### 📊 Residue-Level SAMHD1 Analysis (Random VS Centroid Docking)
+| Metric | Plot |
+|--------|------|
+| RMSF A | ![](results/SAMHD1A%20RMSF.jpg) |
+| RMSF B | ![](results/SAMHD1B%20RMSF.jpg) |
+| RMSF C | ![](results/SAMHD1C%20RMSF.jpg) |
+| RMSF D | ![](results/SAMHD1D%20RMSF.jpg) |
+
+- **RMSF**: Per-residue flexibility comparison for centroid vs random placements.
+
+### 🧠 SOX11 (Chain E) (Centroid vs Random)
+
+| Metric | Plot |
+|--------|------|
+| RMSD | ![](results/SOX11%20RMSD.jpg) |
+| ROG | ![](results/SOX11%20ROG.jpg) |
+| SASA | ![](results/SOX11%20SASA.jpg) |
+| RMSF | ![](results/SOX11%20RMSF.jpg) |
+
 
 ---
 
