@@ -102,27 +102,66 @@ bash scripts/run_gromacs_48.sh
 
 ---
 
-### 🧬 SAMHD1 Chain-Level Dynamics
+### 🧬 SAMHD1 Chain-Level Trajectories Dynamics (Chains A, B, C, D)
 
 | RMSD | ROG | SASA |
 |------|-----|------|
-| ![](Results/figures/SAMHD1_CHAINS_RMSD.jpg) | ![](Results/figures/SAMHD1_CHAINS_ROG.jpg) | ![](Results/figures/SAMHD1_CHAINS_SASA.jpg) |
+| ![](Results/figures/SAMHD1%20CHAINS%20RMSD.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20ROG%20.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20SASA.jpg) |
 
 **RMSD:** Per-chain deviation comparison across centroid vs random protocols.  
 **ROG:** Structural compactness and changes over time.  
 **SASA:** Solvent-accessible surface area for individual SAMHD1 chains.
 
+**🔹 Why it matters:**
+SAMHD1 is **typically a tetramer (A, B, C, D)**. Each chain may respond differently when binding to SOX11. These per-chain dynamics:
+Reveal **allosteric effects**.
+Highlight **differential mobility or folding**.
+Help understand **subunit-specific contributions** to complex formation.
+
 ---
 
-### 🧩 SAMHD1 Complex-Level Dynamics (Centroid vs Random)
+### 🧩 SAMHD1 Combined Trajectories Dynamics (Chains A+B+C+D as one object) (Centroid vs Random)
 
 | RMSD | ROG | SASA |
 |------|-----|------|
-| ![](Results/figures/SAMHD1_COMBINED_RMSD.jpg) | ![](Results/figures/SAMHD1_COMBINED_ROG.jpg) | ![](Results/figures/SAMHD1_COMBINED_SASA.jpg) |
+| ![](Results/figures/SAMHD1%20COMBINED%20RMSD.jpg) | ![](Results/figures/SAMHD1%20COMBINED%20ROG.jpg) | ![](Results/figures/SAMHD1%20COMBINED%20SASA.jpg) |
 
-**Combined RMSD:** Overall deviation of the full complex.  
-**Combined ROG:** Global compactness across docking strategies.  
-**Combined SASA:** Surface exposure changes for the complex as a whole.
+**Combined RMSD:** Assess SAMHD1’s global dynamics post-binding. 
+**Combined ROG:** Determine overall compactness, unfolding, or structural rearrangements due to SOX11 docking.  
+**Combined SASA:** Surface exposure changes on SAMHD1 as a whole.
+****Track centroid vs random docking effects on SAMHD1 as a whole.**
+
+**🔹 Why it matters:**
+Measures **collective motion across all chains**.
+Helpful for identifying **domain-wide stability** or **cooperative effects**.
+Used to **compare docking-induced conformational changes in SAMHD1**.
+
+---
+
+### 🧬 SAMHD1-SOX11 Complex-Level Dynamics (Centroid vs Random)
+
+| RMSD | ROG | SASA |
+|------|-----|------|
+| ![](Results/figures/Complex%20RMSD.png) | ![](Results/figures/Complex%20ROG.png) | ![](Results/figures/Complex%20SASA.png) |
+
+**Complex RMSD:** Overall deviation of the full complex.  
+**Complex ROG:** Global compactness across docking strategies.  
+**Complex SASA:** Surface exposure changes for the complex as a whole.
+
+**🔹 Purpose:**
+Assess **binding interface stability over time**.
+Analyze intermolecular interactions (hydrogen bonds, hydrophobic contacts, etc.).
+Determine **how SOX11 affects SAMHD1 structure and vice versa**. 
+
+**🔹 Why it matters:**
+It's the **most biologically relevant view** of the interaction,
+Used to compute:
+**Interface SASA**,
+COM distances between chains,
+**Docking validation via trajectory inspection**.
+
+---
+
 
 #### 📊 Residue-Level SAMHD1 Analysis (Random VS Centroid Docking)
 | Metric | Plot |
