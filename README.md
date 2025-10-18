@@ -106,7 +106,7 @@ bash scripts/run_gromacs_48.sh
 
 | RMSD | ROG | SASA |
 |------|-----|------|
-| ![](Results/figures/SAMHD1_CHAINS_RMSD.jpg) | ![](Results/figures/SAMHD1_CHAINS_ROG.jpg) | ![](Results/figures/SAMHD1_CHAINS_SASA.jpg) |
+| ![](Results/figures/SAMHD1%20CHAINS%20RMSD.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20ROG.jpg) | ![](Results/figures/SAMHD1%20CHAINS%20SASA.jpg) |
 
 **RMSD:** Per-chain deviation comparison across centroid vs random protocols.  
 **ROG:** Structural compactness and changes over time.  
@@ -118,7 +118,7 @@ bash scripts/run_gromacs_48.sh
 
 | RMSD | ROG | SASA |
 |------|-----|------|
-| ![](Results/figures/SAMHD1_COMBINED_RMSD.jpg) | ![](Results/figures/SAMHD1_COMBINED_ROG.jpg) | ![](Results/figures/SAMHD1_COMBINED_SASA.jpg) |
+| ![](Results/figures/SAMHD1%20COMBINED%20RMSD.jpg) | ![](Results/figures/SAMHD1%20COMBINED%20ROG.jpg) | ![](Results/figures/SAMHD1%20COMBINED%20SASA.jpg) |
 
 **Combined RMSD:** Overall deviation of the full complex.  
 **Combined ROG:** Global compactness across docking strategies.  
