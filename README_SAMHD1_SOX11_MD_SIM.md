@@ -90,7 +90,7 @@ bash scripts/run_gromacs_48.sh
 
 | Snapshot | Analysis |
 |-----------|-----------|
-| ![](Results/VMD-rendered_molecular_frames/cluster200_frame.png) | ![](Results/cluster200_rmsd.svg) |
+| ![](Results/VMD-rendered%20molecular%20frames/cluster200_frame.gif) | ![](Results/cluster200_frame.gif) |
 
 ---
 
@@ -98,7 +98,7 @@ bash scripts/run_gromacs_48.sh
 
 | Snapshot | Analysis |
 |-----------|-----------|
-| ![](Results/VMD-rendered_molecular_frames/cluster361_frame.gif) | ![](Results/cluster361_rmsd.svg) |
+| ![](Results/VMD-rendered%20molecular%20frames/cluster361_frame.gif) | ![](Results/cluster361_frame.gif) |
 
 ---
 
